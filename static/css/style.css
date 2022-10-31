@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+:root{
+    ---hdfont:'Kanit', sans-serif;
+    ---tfd: 'Kanit', sans-serif;
+    ---dfd: 'Cairo', sans-serif;
+}
+.px{
+    padding:0px 100px;
+}
+.df{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* naver styling */
+.container{
+    width: auto;
+    height: 90vh;
+    background-image: linear-gradient(rgb(0,0,0,0.3),transparent), url(../image/buger.jpg);
+    background-position: center;
+    padding: 0 8%;
+    position: relative;  
+}
+nav{
+    width: auto;
+    height: 10vh;
+    justify-content: space-between;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding: 0px 30px;
+    top: 0;
+    z-index: 100; 
+    background-color: black;  
+}
+.logo{
+    color: white;
+    font-family: var(---hdfont);
+}
+span{
+    color: rgb(228, 161, 36);
+}
+.nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-list li a{
+    transition: all 0.0.3s ease 3s;
+    color: white;
+}
+.nav-list li a:hover{
+    color: rgb(228, 161, 36);
+}
+.icon a{
+    color: white;
+    padding: 0px 20px;
+}
+.icon a:hover{
+    transition: all 0.0.3s 3s;
+    color: rgb(228, 157, 25);
+}
+
+button{
+    padding: 9px 10px;
+    background-color: rgb(228, 157, 25);
+    border: 20px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+button a:hover{
+    transition: all 0.0.3s ease 3s;
+    color: white;  
+}
+/* naver styling end */
+
+.hero{
+   width: auto;
+   height: 90vh;
+   background-image: url(../image/traditional-food-around-the-world-Travlinmad.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+}
+.hero{
+    animation-name: hero;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes hero {
+    0%{
+        background-image: url(../image/traditional-food-around-the-world-Travlinmad.jpg);
+    }
+    100%{
+        background-image: url(../image/local-food.webp);
+
+    }
+}
+.hero-content{
+    width: 50%;
+    padding: 0px 30px;
+}
+.hero h3{
+    color: white;
+    line-height:90%; 
+    padding: 15px;  
+    font-size: 3em; 
+
+}
+.hero p{
+    padding: 15px;
+    color: white;
+    font-family: var(---hdfont);
+}
+.text-book  a{
+    padding-left: 20px;
+}
+#container1{
+    width: auto;
+    height: 350px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 0px 80px;
+     transform: translateY(-40%);
+}
+.box{
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+    padding: 20px;
+    margin-top: 190px;
+    background-image: url(../image/local-food\ 1.jpg);
+    background-position: center;
+    /* border-radius: 150px; */
+
+}
+.our-menu1{
+    justify-content: center;
+    transform: translateY(-350%);
+    font-family: var(---dfd);
+    
+}
+.our-menu1 h2{
+    color: black;
+    text-align: center;
+}
+.list2{
+    padding:0px 450px;
+    transform: translateY(-150%);
+
+}
+/* menu list */
+.list2 li{
+    display: inline-block;
+    padding: 0px 20px;
+    color: black;
+}
+.list2 button{
+    background-color:  #182747;;
+}
+.three-box{
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.ib{
+    width: 31%;
+    height: 400px;
+    background-color:  #182747;;
+    border-radius: 30px;
+}
+
+/* 3-box start */
+.ib3{
+    width: 31%;
+    height: 400px;
+    background-color:  #182747;;
+    border-radius: 30px;
+}
+.ib3 h2{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+}
+.ib3 p{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+    font-size: small;
+    /* padding: 0px 20px; */
+}
+.ib3 h3{
+    color: white;
+    margin: 60px; 
+}
+#all-list2{
+    width:auto;
+    height: 200px;
+     background-image: url(/static/image/f1\ 11.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list3{
+    width:auto;
+    height: 200px;
+      background-image: url(/static/image/f2\ bugga.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list4{
+    width:auto;
+    height: 200px;
+      background-image: url(/static/image/f3\ delicious.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+/* 3-box end */
+
+/* 4 box styling */
+.ib4{
+    width: 31%;
+    height: 400px;
+    background-color:  #182747;;
+    border-radius: 30px;
+}
+.ib4 h2{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+}
+.ib4 h3{
+    color: white;
+    margin: 60px;
+}
+.ib4 p{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+    font-size: small;
+
+}
+.four-box{
+    padding: 15px;
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+#all-list5{
+    width:auto;
+    height: 200px;
+      background-image: url(/static/image/f4\ noddles.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list6{
+    width:auto;
+    height: 200px;
+    background-image: url(/static/image/f5\ fry.png);
+    background-size: 0fr;
+    background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list7{
+    width:auto;
+    height: 200px;
+    background-image: url(/static/image/f6\ delicious\ pizza\ 6.png);
+    background-size: 0fr;
+    background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+/* 4 box styling end */
+
+
+/* 5 box styling start */
+
+.ib5{
+    width: 31%;
+    height: 400px;
+    background-color:  #182747;;
+    border-radius: 30px;  
+}
+.ib5 h2{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+}
+.ib5 p{
+    color: white;
+    margin: 0px 20px;
+    margin-top: 10px;
+    font-family: var(---tfd);
+    font-size: small;
+}
+.ib5 h3{
+    color: white;
+    margin: 60px;
+
+}
+.five-box{
+    padding: 15px;
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#all-list8{
+    width:auto;
+    height: 200px;
+    background-color: blue;
+    background-image: url(/static/image/tasty\ burger\ 7.png);
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list9{
+    width:auto;
+    height: 200px;
+    background-color: #182747;
+      background-image: url(/static/image/f8\ buger.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+#all-list10{
+    width:auto;
+    height: 200px;
+    background-color: blue;
+      background-image: url(/static/image/f9\ paste.png);
+     background-size: 0fr;
+     background-color: whitesmoke;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+/* 5 box styling end */
+
+/* view styling start */
+.view{
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.view a{
+    padding-left: 500px;
+    
+}
+a button{
+    padding: 10px 40px;
+    border: 30px;
+     border-radius: 40px;
+}
+header{
+    width: auto;
+    height: 550px;
+    background-color: #182747;
+    background-image: url(/static/image/we\ are.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 20px; */
+}
+header h2{
+    padding-left: 80%;
+    color: white;
+}
+
+.hd h2{
+    padding-top: 80px; 
+}
+.hd p{
+    color: white;
+     padding-left: 80%;    
+}
+.container7{
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+    margin: 10px 30px;
+}
+.container7 h1{
+    margin-left: 30px auto;
+    text-align: center;
+}
+ .booklet{
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    /* border:2px solid black; */
+    margin: 30px auto;
+} 
+.booklet input{
+    width: inherit;
+    height: inherit;
+}
+#container8{
+    width: auto;
+    height: 500px;
+    /* background-color: black; */
+    display: flex;
+    border-radius: 15px solid wheat;
+    justify-content: space-around;
+    margin-top: 31px;
+}
+.bb7{
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+    padding: 15px;
+}
+.last-container10{
+    width: auto;
+    height: 400px;
+    margin-top: 3300px;
+    background-color: #182747;
+}
+.last-container10 h1 {
+    width: 31px;
+    color: white;
+    padding: 70px;
+
+}
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
